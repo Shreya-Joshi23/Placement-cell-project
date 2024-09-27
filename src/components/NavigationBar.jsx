@@ -30,7 +30,10 @@ import LoginIcon from "@mui/icons-material/Login";
 import ReportIcon from "@mui/icons-material/Report";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import SchoolIcon from '@mui/icons-material/School';
+import AboutUs from "./NavigationBarComponents.jsx/AboutUs";
+import PlacementStats from "./NavigationBarComponents.jsx/PlacementStats";
+import Academics from "./NavigationBarComponents.jsx/Academics";
+import People from "./NavigationBarComponents.jsx/People";
 
 const NavigationBar = ({currUser}) => {
   const navigate=useNavigate();
@@ -170,7 +173,7 @@ const NavigationBar = ({currUser}) => {
                     color: "#008336",
                   }}
                 >
-                  Placement Cell Portal
+                  Placement Cell 
                 </Typography>
               </Box>
               <Box
@@ -185,9 +188,10 @@ const NavigationBar = ({currUser}) => {
                 <Typography
                   variant="h4"
                   component="h4"
-                  sx={{ fontWeight: "bolder", padding: 2, color: "#008336" }}
+                  sx={{padding: 2, color: "#008336" }}
                 >
-                  Placement Cell Portal
+                  <Typography variant="h4" sx={{fontWeight:"bolder"}}>Bachelor of Technology</Typography>
+                  Placement Cell 
                 </Typography>
               </Box>
               <Box
@@ -235,30 +239,10 @@ const NavigationBar = ({currUser}) => {
                   <HomeIcon sx={{ marginRight: 1 }} />
                   Home
                 </Button>
-                <Button
-                  sx={{
-                    my: 2,
-                    color: "white",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                    onClick={() => navigate("/placedstudents")}
-                >
-                    <SchoolIcon sx={{ marginRight: 1 }}/>
-                  Our Placed Students
-                </Button>
-                <Button
-                  sx={{
-                    my: 2,
-                    color: "white",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                    onClick={() => navigate("/contactus")}
-                >
-                  <PermContactCalendarIcon sx={{ marginRight: 1 }} />
-                  Contact Us
-                </Button>
+                <AboutUs/>
+                <PlacementStats/>
+                <Academics/>
+                <People/>
               </Box>
 
               <Box sx={{ flexGrow: 0 }}>

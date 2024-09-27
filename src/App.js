@@ -14,6 +14,12 @@ import Contactus from './pages/ContactUs/Contactus';
 import Profile from './pages/Profile/Profile';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 import Placed from './pages/PlacedStudents/Placed';
+import History from './pages/Home/AboutUs/History';
+import Gallery from './pages/Home/AboutUs/Gallery';
+import Facilities from './pages/Home/AboutUs/Facilities';
+import Hodcorner from './pages/Home/AboutUs/Hodcorner';
+import Buildarelation from './pages/Home/PlacementStats/Buildarelation';
+import Whyrecruitus from './pages/Home/PlacementStats/Whyrecruitus';
 
 const App = () => {
   const [currUser, setCurrUser] = useState(null);
@@ -40,7 +46,17 @@ const App = () => {
       <NavigationBar currUser={currUser}/>
       <Container maxWidth="xl">
         <Routes>
+          {/* Homepage component routes */}
           <Route path='/' element={<Home currUser={currUser} />} />
+          <Route path='/facilities' element={<Facilities/>}/>
+          <Route path='/history' element={<History/>}/>
+          <Route path='/hodCorner' element={<Hodcorner/>}/>
+          <Route path='/gallery' element={<Gallery/>}/>
+
+          {/* Placement Stats */}
+          <Route path='/buildarelation' element={<Buildarelation/>}/>
+          <Route path='/whyrecruitus' element={<Whyrecruitus/>}/>
+
           <Route path='/studentDashboard' element={<StudentDashboard currUser={currUser} />} />
           <Route path='/signup' element={<SignUp currUser={currUser} />} />
           <Route path="/login" element={<Login currUser={currUser}/>}/>

@@ -130,8 +130,7 @@ export default function ApplicationTableInfo({ currapplication }) {
                 variant="outlined"
                 color="success"
                 onClick={() => {
-                  setscheduleOpen(true)
-                  
+                  setscheduleOpen(true) 
                 }}
               >
                 Schedule
