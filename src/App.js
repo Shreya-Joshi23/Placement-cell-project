@@ -20,6 +20,8 @@ import Facilities from './pages/Home/AboutUs/Facilities';
 import Hodcorner from './pages/Home/AboutUs/Hodcorner';
 import Buildarelation from './pages/Home/PlacementStats/Buildarelation';
 import Whyrecruitus from './pages/Home/PlacementStats/Whyrecruitus';
+import Admissions from './pages/Home/Academics/Admissions';
+import Courses from './pages/Home/Academics/Courses';
 
 const App = () => {
   const [currUser, setCurrUser] = useState(null);
@@ -56,6 +58,10 @@ const App = () => {
           {/* Placement Stats */}
           <Route path='/buildarelation' element={<Buildarelation/>}/>
           <Route path='/whyrecruitus' element={<Whyrecruitus/>}/>
+
+          {/* Academics */}
+          <Route path='/admissions' element={<Admissions/>}/>
+          <Route path='/courses' element={<Courses/>}/>
 
           <Route path='/studentDashboard' element={<StudentDashboard currUser={currUser} />} />
           <Route path='/signup' element={<SignUp currUser={currUser} />} />

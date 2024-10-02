@@ -2,6 +2,7 @@ import { Button, Menu, MenuItem } from '@mui/material';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
 
+import SchoolIcon from '@mui/icons-material/School';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Academics = () => {
@@ -28,6 +29,7 @@ const Academics = () => {
         }}
         onClick={handleClick}
       >
+        <SchoolIcon  sx={{ marginRight: 1 }}/>
         Academics
         <ArrowDropDownIcon/>
       </Button>
@@ -36,9 +38,8 @@ const Academics = () => {
       open={open}
       onClose={handleClose}
       >
-          <MenuItem onClick={()=>{handleClose();navigate("/history")}}>Build a relation with us</MenuItem>
-          <MenuItem onClick={()=>{handleClose();navigate("/facilities")}}>Why Recruit from us</MenuItem>
-          <MenuItem onClick={()=>{handleClose();navigate("/contactus")}}>Contact Us</MenuItem>
+          <MenuItem onClick={()=>{handleClose();navigate("/admissions")}}>Admissions</MenuItem>
+          <MenuItem onClick={()=>{handleClose();navigate("/courses")}}>Courses</MenuItem>
       </Menu>
       </>
     );

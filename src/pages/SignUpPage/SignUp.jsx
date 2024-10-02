@@ -70,7 +70,7 @@ const SignUp = ({ currUser }) => {
         email: userData.email,
         state:"",
         //SCHOOL DETAILS
-        department: userData.departmentName,
+        department: "BTech",
         major: userData.majorName,
         graduationYear: userData.graduationYear,
         //SKILLS
@@ -226,7 +226,7 @@ const SignUp = ({ currUser }) => {
                       autoComplete="new-password"
                     />
                   </Grid>
-                  <Grid item xs={12}>
+                  {/* <Grid item xs={12}>
                     <FormControl fullWidth>
                       <InputLabel id="Department Name">Department</InputLabel>
                       <Select
@@ -248,7 +248,7 @@ const SignUp = ({ currUser }) => {
                         <MenuItem value={"Bsc"}>BSC</MenuItem>
                       </Select>
                     </FormControl>
-                  </Grid>
+                  </Grid> */}
                   <Grid item xs={12}>
                     <FormControl fullWidth>
                       <InputLabel id="Major Name">Major</InputLabel>

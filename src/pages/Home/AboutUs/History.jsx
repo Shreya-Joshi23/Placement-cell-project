@@ -1,15 +1,12 @@
-import { Box, Container, Grid, Typography, rgbToHex } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 
 const History = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      {/* Title Section */}
       <Typography variant="h4" gutterBottom sx={{ mt: 4 }}>
         History
       </Typography>
-
-      {/* Content Section */}
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Typography variant="body1" paragraph>

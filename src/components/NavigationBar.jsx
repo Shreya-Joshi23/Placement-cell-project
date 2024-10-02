@@ -33,7 +33,6 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AboutUs from "./NavigationBarComponents.jsx/AboutUs";
 import PlacementStats from "./NavigationBarComponents.jsx/PlacementStats";
 import Academics from "./NavigationBarComponents.jsx/Academics";
-import People from "./NavigationBarComponents.jsx/People";
 
 const NavigationBar = ({currUser}) => {
   const navigate=useNavigate();
@@ -209,7 +208,6 @@ const NavigationBar = ({currUser}) => {
           </Container>
         </AppBar>
 
-        {/* 2nd navbar */}
         <AppBar position="sticky" sx={{ background: "#008336" }}>
           <Container maxWidth="xl">
             <Toolbar disableGutters>
@@ -242,7 +240,6 @@ const NavigationBar = ({currUser}) => {
                 <AboutUs/>
                 <PlacementStats/>
                 <Academics/>
-                <People/>
               </Box>
 
               <Box sx={{ flexGrow: 0 }}>

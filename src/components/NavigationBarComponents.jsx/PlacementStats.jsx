@@ -2,6 +2,7 @@ import { Button, Menu, MenuItem } from '@mui/material';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
 
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const PlacementStats = () => {
@@ -28,6 +29,7 @@ const PlacementStats = () => {
         }}
         onClick={handleClick}
       >
+        <SignalCellularAltIcon  sx={{ marginRight: 1 }}/>
         Placement Stats
         <ArrowDropDownIcon/>
       </Button>
