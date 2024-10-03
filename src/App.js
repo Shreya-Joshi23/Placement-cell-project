@@ -13,7 +13,6 @@ import Login from './pages/Login/Login';
 import Contactus from './pages/ContactUs/Contactus';
 import Profile from './pages/Profile/Profile';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
-import Placed from './pages/PlacedStudents/Placed';
 import History from './pages/Home/AboutUs/History';
 import Gallery from './pages/Home/AboutUs/Gallery';
 import Facilities from './pages/Home/AboutUs/Facilities';
@@ -69,8 +68,8 @@ const App = () => {
           <Route path='/contactus' element={<Contactus/>}/>
           <Route path='/profile' element={<Profile currUser={currUser}/>}/>
           <Route path='/adminDashboard' element={<AdminDashboard currUser={currUser}/>}/>
-          <Route path='/placedstudents' element={<Placed currUser={currUser}/>}/>
         </Routes>
+        
       </Container>
       <FooterBar />
     </Box>

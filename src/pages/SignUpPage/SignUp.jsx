@@ -226,32 +226,10 @@ const SignUp = ({ currUser }) => {
                       autoComplete="new-password"
                     />
                   </Grid>
-                  {/* <Grid item xs={12}>
-                    <FormControl fullWidth>
-                      <InputLabel id="Department Name">Department</InputLabel>
-                      <Select
-                        labelId="Department Name Select"
-                        id="departmentName"
-                        value={userData.departmentName}
-                        label="Department Name"
-                        onChange={(e) =>
-                          setUserData({
-                            ...userData,
-                            departmentName: e.target.value,
-                          })
-                        }
-                      >
-                        <MenuItem value={"BTech"}>BTech</MenuItem>
-                        <MenuItem value={"MTech"}>MTech</MenuItem>
-                        <MenuItem value={"Mca"}>MCA</MenuItem>
-                        <MenuItem value={"Bca"}>BCA</MenuItem>
-                        <MenuItem value={"Bsc"}>BSC</MenuItem>
-                      </Select>
-                    </FormControl>
-                  </Grid> */}
+                  
                   <Grid item xs={12}>
                     <FormControl fullWidth>
-                      <InputLabel id="Major Name">Major</InputLabel>
+                      <InputLabel id="Major Name">Branch</InputLabel>
                       <Select
                         labelId="Major Name Select"
                         id="majorName"

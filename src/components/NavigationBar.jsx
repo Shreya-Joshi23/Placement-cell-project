@@ -22,12 +22,12 @@ import {
 import favicon from "../assets/hnbgulogo.jpg";
 import digiIndia from "../assets/digital-india.png";
 
+
 import MenuIcon from "@mui/icons-material/Menu";
 import LogoutIcon from "@mui/icons-material/Logout";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import HomeIcon from "@mui/icons-material/Home";
 import LoginIcon from "@mui/icons-material/Login";
-import ReportIcon from "@mui/icons-material/Report";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AboutUs from "./NavigationBarComponents.jsx/AboutUs";
@@ -78,12 +78,6 @@ const NavigationBar = ({currUser}) => {
                   <HomeIcon />
                 </ListItemIcon>
                 <ListItemText primary="Home" />
-              </ListItem>
-              <ListItem button onClick={() => navigate("/alumni")}>
-                <ListItemIcon>
-                  <ReportIcon />
-                </ListItemIcon>
-                <ListItemText primary="Alumni" />
               </ListItem>
               <ListItem button onClick={() => navigate("/contactus")}>
                 <ListItemIcon>
